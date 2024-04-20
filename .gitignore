@@ -1,2 +1,4 @@
 *_ds/
 __pycache__
+*.pth
+*.onnx

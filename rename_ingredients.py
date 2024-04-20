@@ -19,16 +19,18 @@ def rename_images(directory):
         os.rename(os.path.join(directory, filename), os.path.join(directory, new_filename))
 
 # Specify the directory containing the fruit/vegetable folders
-base_directory = "D:\\Facultate\ELL\\food_recognition\\val"
+base_directory = "D:\\Facultate\\ELL\\food_recognition\\ingredient_identification\\mixed_ingredients"
 
-# Iterate through each directory in the base directory
-for subdir in os.listdir(base_directory):
-    # Construct the full path of the subdirectory
-    subdirectory = os.path.join(base_directory, subdir)
+# # Iterate through each directory in the base directory
+# for subdir in os.listdir(base_directory):
+#     # Construct the full path of the subdirectory
+#     subdirectory = os.path.join(base_directory, subdir)
     
-    # Check if the subdirectory is actually a directory
-    if os.path.isdir(subdirectory):
-        # Rename the images in the subdirectory
-        rename_images(subdirectory)
+#     # Check if the subdirectory is actually a directory
+#     if os.path.isdir(subdirectory):
+#         # Rename the images in the subdirectory
+#         rename_images(subdirectory)
+
+rename_images(base_directory)
 
 print("Image renaming complete.")
